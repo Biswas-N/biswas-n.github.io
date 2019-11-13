@@ -1,6 +1,3 @@
-<section class="section is-medium is-white">
-  <app-project></app-project>
-  <app-project></app-project>
-  <app-project></app-project>
-  <app-project></app-project>
+<section class="section is-white" style="margin-top: 100px;">
+  <app-project *ngFor="let project of projects" [data]="project.payload.doc.data()"></app-project>
 </section>
