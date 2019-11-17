@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.7.4",
+    "firebase": "^7.2.3",
+    "firestore": "^1.1.6",
     "serve": "^11.2.0"
   },
   "devDependencies": {

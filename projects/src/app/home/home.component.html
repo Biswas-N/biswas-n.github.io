@@ -1,0 +1,50 @@
+<section class="hero is-medium">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="assets/Logo.svg" alt="Logo" />
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="/">
+              Home
+            </a>
+            <a class="navbar-item is-active" href="/projects/list/">
+              Projects
+            </a>
+            <a class="navbar-item" href="/about/">
+              About
+            </a>
+            <span class="navbar-item">
+              <a class="button is-primary is-outlined is-rounded" href="mailto:biswas.nandamuri@gmail.com">
+                <span>Say Hi!</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container">
+      <div class="has-text-centered">
+        <h1 class="title is-spaced">My Recent Work!</h1>
+        <h2 class="subtitle">Here are a few recent design projects. Want to see more? <a
+            href="mailto:biswas.nandamuri@gmail.com">Email me</a>.</h2>
+      </div>
+      <app-project-list></app-project-list>
+    </div>
+
+  </div>
+</section>

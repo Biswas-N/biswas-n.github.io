@@ -1,2 +1,3 @@
-<p>project-list works!</p>
-Inside list : <app-project></app-project>
+<section class="is-white">
+  <app-project *ngFor="let project of projects" [data]="project.payload.doc.data()"></app-project>
+</section>

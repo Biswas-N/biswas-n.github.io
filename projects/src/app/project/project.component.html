@@ -1,1 +1,38 @@
-<p>project works!</p>
+<div class="section is-medium">
+  <div class="box tile is-ancestor">
+    <div class="tile">
+      <figure class="image is4by3">
+        <img src="https://cdn.biswas.coffee/projects/ma.png" alt="Image">
+      </figure>
+    </div>
+    <div class="tile is-parent is-vertical">
+      <div class="tile is-parent">
+        <div class="tile is-child" style="margin-left: 8px;">
+          <p class="subtitle is-6">{{data.date}}</p>
+          <p class="title is-spaced">{{data.title}}</p>
+          <p class="subtitle">{{data.subtitle}}</p>
+          <p *ngIf="data.hasSeeMore" class="subtitle"><a href="{{data.seeMore}}"
+              class="button is-small is-link is-light is-rounded">See more details</a></p>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child">
+          <p class="title is-4">Tech Used</p>
+          <div class="tags are-medium">
+            <span class="tag is-link is-light is-rounded">{{data.techUsed.back}}</span>
+            <span class="tag is-danger is-light is-rounded">{{data.techUsed.front}}</span>
+            <span class="tag is-warning is-light is-rounded">{{data.techUsed.language}}</span>
+          </div>
+        </div>
+        <div *ngIf="data.hasClient" class="tile is-parent">
+          <div class="tile is-child">
+            <p class="title is-4">Client</p>
+            <figure class="image is-128x128">
+              <img src="{{data.client}}">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
