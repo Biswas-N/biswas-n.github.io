@@ -7,17 +7,22 @@ import { ProjectsService } from '../shared/projects.service';
   styleUrls: ['./project-list.component.css']
 })
 export class ProjectListComponent implements OnInit {
-  projects;
+  projects:Array<Object>;
 
-  constructor(private projectsService: ProjectsService) { }
+  constructor(private projectsService: ProjectsService) {}
 
   ngOnInit() {
     this.getProjects();
   }
 
   getProjects = () => {
+    let projs = [];
     this.projectsService.getProjects().subscribe(res => {
-      this.projects = res;
+      res.forEach(function (proj) {
+        console.log(proj.payload.doc.data())
+        projs.push(proj.payload.doc.data())
+      })
     });
+    this.projects = projs
   }
 }

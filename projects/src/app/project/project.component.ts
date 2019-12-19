@@ -12,4 +12,11 @@ export class ProjectComponent implements OnInit {
   ngOnInit() {
   }
 
+  hasSeeMore() {
+    if (this.data.hasSeeMore == "TRUE") {
+      return true
+    } else {
+      return false
+    }
+  }
 }

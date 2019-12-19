@@ -8,6 +8,6 @@ export class ProjectsService {
   constructor(private fireStore: AngularFirestore) { }
 
   getProjects() {
-    return this.fireStore.collection("projects").snapshotChanges();
+    return this.fireStore.collection("test").snapshotChanges();
   }
 }
