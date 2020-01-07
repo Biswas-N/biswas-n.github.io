@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Mediterranean Archaeology",
+    "subtitle": "Designed and developed a Django based full stack application to extract, pre-process and display data. Used modern technologies like Python’s Django, Docker, Postgres, and PDF Miner to take an idea to wireframes, to design and to a fully developed web application.",
+    "seeMore": "https://docs.biswas.coffee/Mediterranean-Archaeology.pdf",
+    "image": "https://cdn.biswas.coffee/projects/ma.png",
+    "hasSeeMore": "TRUE",
+    "hasClient": "TRUE",
+    "client": "https://cdn.biswas.coffee/projects/logos/la%20trobe.png",
+    "date": "Aug' 18 - Nov' 18",
+    "back": "Django",
+    "front": "Bootstrap",
+    "language": "Python"
+  },
+  {
+    "title": "M1 Automater",
+    "subtitle": "Developed a Laravel (REST API) - Vue Js (Single Page) application to automate the M1 process. Learnt and implemented advanced concepts like Dependency Injection, Routing and Authentication.",
+    "seeMore": null,
+    "image": "https://cdn.biswas.coffee/projects/m1.png",
+    "hasSeeMore": "FALSE",
+    "hasClient": "TRUE",
+    "client": "https://cdn.biswas.coffee/projects/logos/brimbank.png",
+    "date": "Aug' 18 - Nov' 18",
+    "back": "Django",
+    "front": "Bootstrap",
+    "language": "Python"
+  }
+]
