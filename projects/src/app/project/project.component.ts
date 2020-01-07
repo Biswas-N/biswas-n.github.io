@@ -19,4 +19,24 @@ export class ProjectComponent implements OnInit {
       return false
     }
   }
+
+  getTechUsed() {
+    let tech = this.data.techused.split("|");
+
+    let colors = ["link", "danger", "warning", "success", "info", "primary"];
+    let techColor : {[id: string] : string} = {};
+
+    for (let i = 0; i < tech.length; i++) {
+      techColor[colors[i]] = tech[i];
+    }
+    return techColor;
+  }
+
+  hasClient() {
+    if (this.data.hasClient == "TRUE") {
+      return true
+    } else {
+      return false
+    }
+  }
 }

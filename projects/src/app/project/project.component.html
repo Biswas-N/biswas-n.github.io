@@ -19,12 +19,10 @@
         <div class="tile is-child">
           <p class="title is-4">Tech Used</p>
           <div class="tags are-medium">
-            <span class="tag is-link is-light is-rounded">{{data.back}}</span>
-            <span class="tag is-danger is-light is-rounded">{{data.front}}</span>
-            <span class="tag is-warning is-light is-rounded">{{data.language}}</span>
+            <span *ngFor="let tech of getTechUsed() | keyvalue" class="tag is-{{tech.key}} is-light is-rounded">{{tech.value}}</span>
           </div>
         </div>
-        <div *ngIf="data.hasClient" class="tile is-parent">
+        <div *ngIf="hasClient()" class="tile is-parent">
           <div class="tile is-child">
             <p class="title is-4">Client</p>
             <figure class="image is-128x128">

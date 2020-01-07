@@ -19,7 +19,7 @@ export class ProjectListComponent implements OnInit {
     let projs = [];
     this.projectsService.getProjects().subscribe(res => {
       res.forEach(function (proj) {
-        console.log(proj.payload.doc.data())
+        // console.log(proj.payload.doc.data())
         projs.push(proj.payload.doc.data())
       })
     });
