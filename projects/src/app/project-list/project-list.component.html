@@ -1,3 +1,5 @@
 <section class="is-white">
-  <app-project *ngFor="let project of projects" [data]="project.payload.doc.data()"></app-project>
+  <div *ngFor="let project of projects">
+    <app-project [data]="project"></app-project>
+  </div>
 </section>
