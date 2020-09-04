@@ -17,6 +17,6 @@
     "serve": "^11.2.0"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
