@@ -1,22 +1,22 @@
 {
-  "name": "portfolio",
-  "version": "2.0.0",
-  "description": "My personal portfolio npm project",
-  "main": "_sass/main.sass",
-  "scripts": {
-    "css-build": "node-sass --omit-source-map-url _sass/main.sass css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
-  },
+  "name": "biswas-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Biswas Portfolio",
   "author": "Biswas Nandamuri",
-  "license": "ISC",
-  "dependencies": {
-    "bulma": "^0.7.4",
-    "firebase": "^7.2.3",
-    "firestore": "^1.1.6",
-    "serve": "^11.2.0"
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "devDependencies": {
-    "node-sass": "^4.13.1"
+  "dependencies": {
+    "gatsby": "^3.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
